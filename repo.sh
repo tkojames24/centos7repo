@@ -134,7 +134,7 @@ reposync -r base
 reposync -r updates 
 reposync -r extras  
 reposync -r salt-latest 
-reposync -r dockerrepo 
+reposync -r docker-ce-stable
 reposync -r epel 
 
 # Create repos this will take awhile
@@ -144,7 +144,8 @@ createrepo   /var/www/html/repos/updates
 createrepo   /var/www/html/repos/extras
 createrepo   /var/www/html/repos/epel
 createrepo  /var/www/html/repos/salt-latest
-createrepo  /var/www/html/repos/dockerrepo
+createrepo /var/www/html/repos/docker-ce-stable
+
 
  
 
